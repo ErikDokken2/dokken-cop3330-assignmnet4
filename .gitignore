@@ -1,4 +1,9 @@
-# Project exclude paths
-/.gradle/
-/build/
-/build/classes/java/main/
+/.idea/
+/uml/
+/gradle/
+/src/
+/.gitignore
+/build.gradle
+/gradlew
+/gradlew.bat
+/settings.gradlen/
