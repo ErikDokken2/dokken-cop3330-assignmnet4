@@ -1,0 +1,23 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class HomePage{
+main()
+start()
+
+}
+
+class HomePageController{
+    resultDisplay: TextField
+    AddListButClicked()
+    RevListButClicked()
+    EditListNameClicked()
+    RemovIteamClicked()
+    AddIteamClicked()
+    SaveOptionClicked()
+}
+
+HomePage --|> javafx.Application
+
+HomePage - HomePageController
+@enduml

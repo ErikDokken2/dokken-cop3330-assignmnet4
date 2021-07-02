@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #222831;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignmnets.HomePageController">
+   <children>
+      <AnchorPane prefHeight="60.0" prefWidth="600.0" style="-fx-background-color: #171717;">
+         <children>
+            <Label layoutX="207.0" layoutY="13.0" text="To-Do Application" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="399.0" layoutY="60.0" text="To-Do's" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="60.0" text="Actions" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="58.0" layoutY="106.0" mnemonicParsing="false" onAction="#AddToDoClicked" text="Add List" />
+      <Button layoutX="49.0" layoutY="153.0" mnemonicParsing="false" onAction="#RevListButClicked" text="RemoveList" />
+      <Button layoutX="45.0" layoutY="200.0" mnemonicParsing="false" onAction="#EditListNameClicked" text="EditListName" />
+      <Button layoutX="21.0" layoutY="242.0" mnemonicParsing="false" onAction="#RemoveItemClicked" text="RemoveItemFromList" />
+      <Button layoutX="45.0" layoutY="285.0" mnemonicParsing="false" onAction="#AddItemClicked" text="AddIteamToList" />
+      <Button layoutX="46.0" layoutY="326.0" mnemonicParsing="false" onAction="#SaveOptionClicked" text="SaveOptions" />
+      <TextField fx:id="resultDisplay" layoutX="237.0" layoutY="88.0" prefHeight="308.0" prefWidth="363.0" />
+   </children>
+</AnchorPane>
