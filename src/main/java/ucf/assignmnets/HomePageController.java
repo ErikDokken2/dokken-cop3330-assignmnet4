@@ -75,7 +75,17 @@ public class HomePageController  {
 
 
     @FXML
-    void SaveOptionClicked(ActionEvent event) {
+    void SaveOptionClicked(ActionEvent event) throws IOException {
+        //Makes new scene
+        Parent makeNewListParent = FXMLLoader.load(getClass().getResource("/ucf.assignmnets/SaveOptions.fxml"));
+        Scene newListScene = new Scene(makeNewListParent);
+
+        //This line gets the Stage Info
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+
+        //Sets Scene and Shows
+        window.setScene(newListScene);
+        window.show();
 
     }
 
@@ -94,6 +104,19 @@ public class HomePageController  {
     }
 
 
+    @FXML
+    void OtherActions(ActionEvent event) throws IOException {
+        //Makes new scene
+        Parent makeNewListParent = FXMLLoader.load(getClass().getResource("/ucf.assignmnets/OtherOptions.fxml"));
+        Scene newListScene = new Scene(makeNewListParent);
+
+        //This line gets the Stage Info
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+
+        //Sets Scene and Shows
+        window.setScene(newListScene);
+        window.show();
+    }
 
 
 }
