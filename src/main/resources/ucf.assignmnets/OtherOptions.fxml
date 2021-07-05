@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #222831;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignmnets.OtherOptionsController">
+   <children>
+      <AnchorPane prefHeight="60.0" prefWidth="600.0" style="-fx-background-color: #171717;">
+         <children>
+            <Label layoutX="230.0" layoutY="13.0" text="Other Actions" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button layoutX="37.0" layoutY="200.0" mnemonicParsing="false" onAction="#EditDescriptionOfItem" text="EditDescriptionOfItem" />
+      <TextField fx:id="ToDoListKey" layoutX="30.0" layoutY="96.0" />
+      <Label layoutX="45.0" layoutY="69.0" text="ToDoListName" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ButtonBar layoutX="153.0" layoutY="311.0" prefHeight="40.0" prefWidth="77.0" />
+      <Button layoutX="58.0" layoutY="234.0" mnemonicParsing="false" onAction="#EditDateOfItem" text="EditDateOfItem" />
+      <TextField fx:id="ItemNameKey" layoutX="26.0" layoutY="155.0" />
+      <Label layoutX="62.0" layoutY="128.0" text="Item Name" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="393.0" layoutY="327.0" mnemonicParsing="false" onAction="#LoadToDoList" text="Load" />
+      <TextField fx:id="inputText" alignment="TOP_CENTER" layoutX="289.0" layoutY="89.0" prefHeight="222.0" prefWidth="250.0" />
+      <Button layoutX="61.0" layoutY="266.0" mnemonicParsing="false" onAction="#DisplayToDoListItems" text="Display Items" />
+      <Button layoutX="53.0" layoutY="299.0" mnemonicParsing="false" onAction="#DisplayComplete" text="Display Complete" />
+      <Button layoutX="45.0" layoutY="339.0" mnemonicParsing="false" onAction="#DisplayIncomplete" text="Display Incompleted" />
+      <Label layoutX="315.0" layoutY="56.0" text="Place Addess of inputFile" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
