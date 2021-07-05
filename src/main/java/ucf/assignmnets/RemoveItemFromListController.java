@@ -25,7 +25,11 @@ public class RemoveItemFromListController {
     @FXML
     void RemoveItemButton(ActionEvent event) throws IOException {
 
-
+        //boollean there a list; CheckforList();
+        //if(CheckforList != False)
+            //Map.HashMap.Items.remove(ItemNameKey);
+        //otherwise
+        //Error message
 
         //Goes Back to main menu
         Parent makeNewListParent = FXMLLoader.load(getClass().getResource("/ucf.assignmnets/HomePage.fxml"));
@@ -36,6 +40,19 @@ public class RemoveItemFromListController {
 
         window.setScene(newListScene);
         window.show();
+    }
+
+    private boolean CheckforList() {
+        //int counter = 0
+        //if publis map == Null || ""
+        //return false
+        //otherwise
+        //do
+        // if (map.contains(titlekey)
+        //return true
+
+        //filler return
+        return false;
     }
 
 }

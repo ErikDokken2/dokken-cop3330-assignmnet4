@@ -24,14 +24,14 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <TextField fx:id="inputText" layoutX="226.0" layoutY="141.0" />
+            <TextField fx:id="ToDoTitleKey" layoutX="226.0" layoutY="141.0" />
             <Button layoutX="269.0" layoutY="251.0" mnemonicParsing="false" onAction="#EditToDoTitle" text="Edit Title" />
             <Label contentDisplay="CENTER" layoutX="229.0" layoutY="174.0" text="New Title of To-Do" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <TextField fx:id="inputText1" layoutX="226.0" layoutY="201.0" />
+            <TextField fx:id="NewToDoTitle" layoutX="226.0" layoutY="201.0" />
          </children>
       </AnchorPane>
    </children>

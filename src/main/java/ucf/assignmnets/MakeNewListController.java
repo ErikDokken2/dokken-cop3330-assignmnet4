@@ -20,8 +20,9 @@ public class MakeNewListController  {
 
     @FXML
     void CreateToDo(ActionEvent event) throws IOException {
+        //Creates the new ToDOList element with put
 
-
+        //HomePage.ToDoList.put(inputText,null);
 
         //Goes Back to main menu
         Parent makeNewListParent = FXMLLoader.load(getClass().getResource("/ucf.assignmnets/HomePage.fxml"));

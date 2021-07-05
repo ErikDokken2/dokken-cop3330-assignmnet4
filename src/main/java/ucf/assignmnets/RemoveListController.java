@@ -19,6 +19,11 @@ public class RemoveListController {
 
         @FXML
         void RemoveToDo(ActionEvent event) throws IOException {
+
+
+            //Remove To-Do based on inputText
+            //Main.hashMap.remove(inputText);
+
             //Goes Back to main menu
             Parent makeNewListParent = FXMLLoader.load(getClass().getResource("/ucf.assignmnets/HomePage.fxml"));
             Scene newListScene = new Scene(makeNewListParent);

@@ -22,7 +22,10 @@ public class AddItemToListController {
 
     @FXML
     void AddItemButton(ActionEvent event) throws IOException {
+        //Check for map exist(ToD0) with inputed title
 
+        //boolean check = CheckforList();
+        //.addNewItemKey
 
 
         //Goes Back to main menu
@@ -35,5 +38,19 @@ public class AddItemToListController {
         window.setScene(newListScene);
         window.show();
 
+
+    }
+
+    private boolean CheckforList() {
+        //int counter = 0
+        //if publis map == Null || ""
+            //return false
+        //otherwise
+            //do
+        // if (map.contains(titlekey)
+            //return true
+
+        //filler return
+        return false;
     }
 }

@@ -11,12 +11,15 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-// Note to self to change the .getResource("/ucf.assignmnets/HomePage.fxml")) from homepage to Application
 
+
+// Note to self to change the .getResource("/ucf.assignmnets/HomePage.fxml")) from homepage to Application
+// you can access the public values by doing HomePage.valName = ...
 
 public class HomePage extends Application {
-//    private static Map<String, String> Items =  new HashMap<>();
-//    private static Map<String,Map<Items>> ToDoList = new HashMap<>();
+ //   public  Map<String, String> Items =  new HashMap<>();
+//    public Map<String,Map<Items>> ToDoList = new HashMap<>();    //name,map
+
 
     public static void main(String[] args) {
         launch(args);
@@ -24,7 +27,7 @@ public class HomePage extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-
+        //Start the program
         try {
             Parent root = FXMLLoader.load(getClass().getResource("/ucf.assignmnets/HomePage.fxml"));
 
@@ -39,6 +42,7 @@ public class HomePage extends Application {
             e.printStackTrace();
         }
     }
+
 
 
 }

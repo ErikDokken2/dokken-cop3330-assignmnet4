@@ -10,7 +10,10 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.PrintWriter;
+
 public class SaveOptionsController {
     @FXML
     private TextField SaveListKey;
@@ -18,7 +21,20 @@ public class SaveOptionsController {
     @FXML
     void SaveAllLists(ActionEvent event) throws IOException {
 
+        //String outputString = Main.hmap.toString();
 
+        //MakeNewFile();
+
+        //String fileName = nameOutfileName + ".txt";
+//        try{
+//            PrintWriter outputFile = new PrintWriter(fileName);
+//            outputFile.println(outputString);
+//            outputFile.close(); //Closes the file
+//            System.out.println("done");
+//        }catch(FileNotFoundException e)
+//        {
+//            e.printStackTrace();
+//        }
 
         //Goes Back to main menu
         Parent makeNewListParent = FXMLLoader.load(getClass().getResource("/ucf.assignmnets/HomePage.fxml"));
@@ -31,9 +47,27 @@ public class SaveOptionsController {
         window.show();
     }
 
+    private void MakeNewFile() {
+        //        File myFile = new File("address");
+
+    }
+
     @FXML
     void SaveList(ActionEvent event) throws IOException {
+        //String outputString = Main.hmap.toString();
 
+        //MakeNewFile();
+
+        //String fileName = nameOutfileName + ".txt";
+//        try{
+//            PrintWriter outputFile = new PrintWriter(fileName);
+//            outputFile.println(outputString);
+//            outputFile.close(); //Closes the file
+//            System.out.println("done");
+//        }catch(FileNotFoundException e)
+//        {
+//            e.printStackTrace();
+//        }
 
 
         //Goes Back to main menu

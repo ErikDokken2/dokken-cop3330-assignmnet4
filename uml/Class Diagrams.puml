@@ -12,12 +12,71 @@ class HomePageController{
     AddListButClicked()
     RevListButClicked()
     EditListNameClicked()
-    RemovIteamClicked()
-    AddIteamClicked()
+    RemovItemClicked()
+    AddItemClicked()
     SaveOptionClicked()
+}
+
+class AddItemToListController{
+ToDoTitleInput TextField:
+NewItemKey TextField:
+
+AddItemButton();
+}
+
+class EditListNameController{
+ToDoTitleKey TextField:
+NewToDoTitle TextField:
+
+EditToDoTitle();
+}
+
+class MakeNewListController{
+inputText TextField:
+
+CreateToDo();
+}
+
+class OtherOptionsController{
+ToDoListKey TextField:
+ItemNameKey TextField:
+inputText TextField:
+
+DisplayComplete()
+DisplayIncomplete()
+DisplayToDoListItems()
+EditDateOfItem()
+EditDescriptionOfItem()
+LoadToDoList()
+
+}
+class RemoveItemFromListController{
+ToDoTitleKey TextField:
+ItemNameKey TextField:
+
+RemoveItemButton()
+}
+
+class RemoveListController{
+inputText TextField:
+
+RemoveToDo()
+}
+class SaveOptionsController{
+SaveListKey TextField:
+
+SaveAllLists()
+SaveList()
 }
 
 HomePage --|> javafx.Application
 
 HomePage - HomePageController
+HomePageController - AddItemToListController
+HomePageController -- EditListNameController
+HomePageController - MakeNewListController
+HomePageController -- RemoveItemFromListController
+HomePageController -- OtherOptionsController
+HomePageController --- RemoveListController
+HomePageController -- SaveOptionsController
 @enduml
