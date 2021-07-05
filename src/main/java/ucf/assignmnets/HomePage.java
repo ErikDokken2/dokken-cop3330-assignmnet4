@@ -17,8 +17,7 @@ import java.util.Map;
 // you can access the public values by doing HomePage.valName = ...
 
 public class HomePage extends Application {
- //   public  Map<String, String> Items =  new HashMap<>();
-//    public Map<String,Map<Items>> ToDoList = new HashMap<>();    //name,map
+    //public HashMap<String,HashMap<String,String>> ToDoList = new HashMap<String,HashMap<String,String>>();    //name, HashMap<Description, Date>
 
 
     public static void main(String[] args) {
